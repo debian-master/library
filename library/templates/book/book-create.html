@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            {% for form in form %}
+            {{form}}
+            {% endfor %}
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>
